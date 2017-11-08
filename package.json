@@ -36,6 +36,7 @@
     "url": "https://github.com/ameerthehacker/ng-flash-messages.git/issues"
   },
   "devDependencies": {
+    "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/compiler-cli": "^4.0.0",
@@ -43,8 +44,8 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@compodoc/compodoc": "^1.0.0-beta.10",
-    "@types/node": "~6.0.60",
     "@types/jest": "^19.2.3",
+    "@types/node": "~6.0.60",
     "angular-in-memory-web-api": "^0.3.2",
     "codelyzer": "~2.0.0",
     "concurrently": "^3.4.0",
@@ -73,6 +74,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.2.1"
   }
 }
