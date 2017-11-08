@@ -1,0 +1,28 @@
+{
+  "name": "ng-flash-messages",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ameerthehacker/ng-flash-messages.git"
+  },
+  "author": {
+    "name": "Ameer Jhan",
+    "email": "ameerjhanprof@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ameerthehacker/ng-flash-messages.git/issues"
+  },
+  "main": "ng-flash-messages.umd.js",
+  "module": "ng-flash-messages.js",
+  "jsnext:main": "ng-flash-messages.js",
+  "typings": "ng-flash-messages.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
