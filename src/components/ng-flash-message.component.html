@@ -1,6 +1,11 @@
 <div [@alertState]="alertVisibility" class="alert alert-{{ flashMessage.type }}" role="alert">
     <a href="#" *ngIf="flashMessage.dismissible" (click)="onBtnCloseClick($event)" class="close">&times;</a>
-    <p *ngFor="let message of flashMessage.messages">
-        {{ message }}
-    </p>
+    <span *ngIf="flashMessage.messages?.length == 1">
+        {{ flashMessage.messages[0] }}
+    </span>
+    <span *ngIf="flashMessage.messages?.length > 1">
+        <p *ngFor="let message of flashMessage.messages">
+            {{ message }}
+        </p>
+    </span>
 </div>

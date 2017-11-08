@@ -1,6 +1,6 @@
-export class IFlashMessage {
+export class FlashMessage {
     messages: string[];
-    type: string = 'success';
-    dismissible: boolean = false;
-    timeout: number | boolean = false;
+    type?: string;
+    dismissible?: boolean;
+    timeout?: number | boolean;
 }
