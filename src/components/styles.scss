@@ -1,0 +1,15 @@
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_alerts.scss';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss';
+
+.alert {
+    a.close {
+        float: right;
+        text-decoration: none !important;
+        color: $gray-light;
+        font-weight: bold;
+    }
+    a.close:hover {
+        color: $gray-dark;        
+    }
+}
