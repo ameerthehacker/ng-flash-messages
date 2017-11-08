@@ -31,7 +31,7 @@ import { NgFlashMessagesModule } from 'ng-flash-messages';
     BrowserModule,
 
     // Specify the library as an import
-    NgFlashMessagesModule
+    NgFlashMessagesModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

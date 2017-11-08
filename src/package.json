@@ -1,6 +1,6 @@
 {
   "name": "ng-flash-messages",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/ameerthehacker/ng-flash-messages.git"
@@ -23,7 +23,7 @@
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
-    "@angular/animations": "^4.0.0",        
+    "@angular/animations": "^4.0.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   }
