@@ -1,4 +1,6 @@
-# ng-flash-messages
+# NgFlashMessages
+
+It is an angular2+ flash message library with bootstrap styling and native angular animation.
 
 ## Installation
 
@@ -8,15 +10,9 @@ To install this library, run:
 $ npm install ng-flash-messages --save
 ```
 
-## Consuming your library
+## Importing the necessary module
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install ng-flash-messages
-```
-
-and then from your Angular `AppModule`:
+Once you have installed the library with npm, you can import the library in your Angular `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,8 +20,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'ng-flash-messages';
+// Import the library
+import { NgFlashMessagesModule } from 'ng-flash-messages';
 
 @NgModule({
   declarations: [
@@ -34,8 +30,8 @@ import { SampleModule } from 'ng-flash-messages';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    LibraryModule
+    // Specify the library as an import
+    NgFlashMessagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,29 +39,68 @@ import { SampleModule } from 'ng-flash-messages';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
-
+Once the library is imported, you can use ng-flash-message components anywhere in the app:
 ```xml
-<!-- You can now use your library component in app.component.html -->
 <h1>
-  {{title}}
+  {{ title }}
 </h1>
-<sampleComponent></sampleComponent>
+<ng-flash-message></ng-flash-message>
 ```
 
-## Development
+## Showing the flash message
 
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
+In any of your component inject the NgFlashMessageService:
 
-```bash
-$ npm run build
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+import { NgFlashMessageService } from 'ng-flash-messages';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+  title = 'app';
+
+  constructor(private ngFlashMessageService: NgFlashMessageService) {
+  }
+  ngOnInit() {}
+}
+```
+Then call the showFlashMessage method in the service to show the flash message:
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+import { NgFlashMessageService } from 'ng-flash-messages';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+  title = 'app';
+
+  constructor(private ngFlashMessageService: NgFlashMessageService) {
+  }
+  ngOnInit() {
+    this.ngFlashMessageService.showFlashMessage({
+      // Array of messages each will be displayed in new line
+      messages: ["Yah! i'm alive"], 
+      // Whether the flash can be dismissed by the user defaults to false
+      dismissible: true, 
+      // Time after which the flash disappears defaults to 2000ms
+      timeout: false,
+      // Type of flash message, it defaults to info and success, warning, danger types can also be used
+      type: 'danger'
+    });
+  }
+}
 ```
 
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
 
 ## License
 

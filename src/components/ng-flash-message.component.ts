@@ -42,7 +42,7 @@ export class NgFlashMessageComponent implements OnInit {
 
         this.ngFlashMessageService.showFlashMessageEvent.subscribe((flashMessage: FlashMessage) => {
             this.alertVisibility = 'visible';
-            flashMessage.type = flashMessage.type ? flashMessage.type: 'success'
+            flashMessage.type = flashMessage.type ? flashMessage.type: 'info'
             flashMessage.timeout = flashMessage.timeout === undefined ? 2000: flashMessage.timeout;
 
             this.flashMessage = flashMessage;
