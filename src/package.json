@@ -1,6 +1,6 @@
 {
   "name": "ng-flash-messages",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/ameerthehacker/ng-flash-messages.git"
@@ -10,7 +10,16 @@
     "email": "ameerjhanprof@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular",
+    "angular2",
+    "ng2",
+    "ng4",
+    "ngx",
+    "flash",
+    "messages",
+    "notifications",
+    "component",
+    "service"
   ],
   "license": "MIT",
   "bugs": {
