@@ -1,4 +1,6 @@
-<div [@alertState]="alertVisibility" class="alert alert-success" role="alert">
-    <a href="#" (click)="onBtnCloseClick($event)" class="close">&times;</a>
-    This is a flash message!
+<div [@alertState]="alertVisibility" class="alert alert-{{ flashMessage.type }}" role="alert">
+    <a href="#" *ngIf="flashMessage.dismissible" (click)="onBtnCloseClick($event)" class="close">&times;</a>
+    <p *ngFor="let message of flashMessage.messages">
+        {{ message }}
+    </p>
 </div>
