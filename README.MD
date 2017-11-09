@@ -2,6 +2,8 @@
 
 It is an angular2+ flash message library with bootstrap styling and native angular animation.
 
+![Demo Gif](https://raw.githubusercontent.com/ameerthehacker/ng-flash-messages-demo/master/src/assets/images/demo.gif)
+
 ## Installation
 
 To install this library, run:
