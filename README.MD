@@ -1,5 +1,7 @@
 # NgFlashMessages
 
+![npm](https://img.shields.io/npm/dm/ng-flash-messages.svg?style=for-the-badge)
+
 It is an angular2+ flash message library with bootstrap styling and native angular animation [Demo](https://ameerthehacker.github.io/ng-flash-messages-demo/).
 
 ![Demo Gif](https://raw.githubusercontent.com/ameerthehacker/ng-flash-messages-demo/master/src/assets/images/demo.gif)
