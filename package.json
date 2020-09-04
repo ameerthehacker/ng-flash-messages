@@ -59,7 +59,7 @@
     "jest": "^20.0.3",
     "jest-preset-angular": "^2.0.2",
     "lite-server": "^2.3.0",
-    "node-sass": "^4.5.2",
+    "node-sass": "^4.13.1",
     "node-sass-tilde-importer": "^1.0.0",
     "node-watch": "^0.5.2",
     "protractor": "~5.1.0",
